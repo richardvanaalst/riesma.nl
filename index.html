@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>riesma</title>
+    <meta name="description" content="riesma" />
+    <style>
+      :root {
+        --orange: hsl(22 100% 58%);
+        --green: hsl(156 42% 48%);
+      }
+      @keyframes weee {
+        from {
+          color: var(--green);
+          background-color: var(--green);
+        }
+
+        to {
+          color: var(--orange);
+          background-color: var(--orange);
+        }
+      }
+
+      html {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        font: 2rem/1.5 system-ui, sans-serif;
+        text-align: center;
+        color: var(--green);
+        background-color: var(--green);
+        background-image: radial-gradient(
+            ellipse at 0% 0%,
+            hsl(0 0 0%/33%),
+            hsl(0 0 0%/0%)
+          ),
+          radial-gradient(
+            ellipse at 50% 105%,
+            hsl(0 0 100%/33%),
+            hsl(0 0 100%/0%)
+          );
+        text-shadow: 1px 1px 0 hsl(0 0 100%/32%), -1px -1px 0 hsl(0 0 0%/12%);
+        animation: weee 6s ease-in-out 1s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <p>this is not my website</p>
+  </body>
+</html>

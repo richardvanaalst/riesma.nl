@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>riesma</title>
-<meta name="description" content="riesma" />
+<meta name="description" content="riesma – this is not my website">
 <style>
-  @keyframes weee {
+  @keyframes glow {
     0% {
       color: var(--orange);
       background-color: var(--orange);
@@ -44,11 +44,12 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    font: 2rem/1.5 system-ui, sans-serif;
+    font-family: system-ui, sans-serif;
     text-align: center;
     color: var(--orange);
     background-color: var(--orange);
-    background-image: radial-gradient(
+    background-image:
+      radial-gradient(
         ellipse at 0% 0%,
         hsl(0 0 0%/33%),
         hsl(0 0 0%/0%)
@@ -59,12 +60,12 @@
         hsl(0 0 100%/0%)
       );
     text-shadow: 1px 1px 0 hsl(0 0 100%/32%), -1px -1px 0 hsl(0 0 0%/12%);
-    animation: weee 24s ease-in-out 1s infinite;
+    animation: glow 24s ease-in-out 1s infinite;
   }
 </style>
 </head>
 
 <body>
-  <p>this is not my website</p>
+  <h1>this is not my website</h1>
 </body>
 </html>

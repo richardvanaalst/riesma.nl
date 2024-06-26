@@ -34,9 +34,9 @@
   }
 
   :root {
-    --orange: hsl(22 100% 58%);
-    --green: hsl(156 42% 48%);
-    --teal: hsl(192deg 60% 32%);
+    --orange: hsl(22deg 100 58);
+    --green: hsl(156deg 42 48);
+    --teal: hsl(192deg 60 32);
   }
 
   html {
@@ -44,22 +44,17 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    padding-block-start: 10vh;
     font-family: system-ui, sans-serif;
-    text-align: center;
     color: var(--orange);
+    text-align: center;
+    text-shadow:
+      1px 1px 0 hsl(0deg 0 100% / 32%),
+      -1px -1px 0 hsl(0deg 0 0% / 12%);
     background-color: var(--orange);
     background-image:
-      radial-gradient(
-        ellipse at 0% 0%,
-        hsl(0 0 0%/33%),
-        hsl(0 0 0%/0%)
-      ),
-      radial-gradient(
-        ellipse at 50% 105%,
-        hsl(0 0 100%/33%),
-        hsl(0 0 100%/0%)
-      );
-    text-shadow: 1px 1px 0 hsl(0 0 100%/32%), -1px -1px 0 hsl(0 0 0%/12%);
+      radial-gradient(ellipse at 0 0, hsl(0deg 0 0 / 33%), hsl(0deg 0 0 / 0%)),
+      radial-gradient(ellipse at 50% 105%, hsl(0deg 0 100 / 33%), hsl(0deg 0 100 / 0%));
     animation: glow 24s ease-in-out 1s infinite;
   }
 

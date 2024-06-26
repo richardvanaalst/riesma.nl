@@ -7,12 +7,22 @@
 <meta name="description" content="riesma" />
 <style>
   @keyframes weee {
-    from {
+    0% {
       color: var(--green);
       background-color: var(--green);
     }
 
-    to {
+    25% {
+      color: var(--orange);
+      background-color: var(--orange);
+    }
+
+    50% {
+      color: var(--teal);
+      background-color: var(--teal);
+    }
+
+    100% {
       color: var(--orange);
       background-color: var(--orange);
     }
@@ -21,6 +31,7 @@
   :root {
     --orange: hsl(22 100% 58%);
     --green: hsl(156 42% 48%);
+    --teal: hsl(192deg 60% 32%);
   }
 
   html {

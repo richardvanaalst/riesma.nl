@@ -1,0 +1,18 @@
+{
+  "name": "riesma.nl",
+  "description": "Richard van Aalst",
+  "version": "2024.x",
+  "author": "Richard van Aalst",
+  "homepage": "https://riesma.nl/",
+  "main": "/",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richardvanaalst/riesma.nl.git"
+  },
+  "browserslist": [
+    "not Explorer > 0",
+    "not dead"
+  ]
+}

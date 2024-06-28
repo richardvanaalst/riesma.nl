@@ -1,0 +1,55 @@
+# OS
+._*
+.DS_Store
+Thumbs.db
+
+# IDE
+.cache
+.idea
+.project
+.settings
+.tmproj
+.vscode
+*.code-workspace
+*.esproj
+*.sublime-project
+*.sublime-workspace
+
+# VCS
+.CVS
+.git
+.hg
+.svn
+CVS
+
+# Misc. always-ignore extensions
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# General folders
+dist-sass/
+node_modules/
+coverage
+
+# Sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map

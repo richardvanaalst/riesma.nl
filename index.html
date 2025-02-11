@@ -16,7 +16,6 @@
   }
 
   html {
-    width: 100vw;
     height: 100vh;
     font-family: verdana, monospace;
     color: var(--sevilla);
@@ -25,7 +24,12 @@
       0.5px 0.5px 0 hsl(0deg 0 100% / 32%),
       -0.5px -0.5px 0 hsl(0deg 0 0% / 12%);
     background-color: var(--sevilla);
-    background-image: radial-gradient(ellipse at 50% 110%, hsl(0deg 0 100 / 24%), hsl(0deg 0 100 / 0%) 80%);
+    background-image:
+      radial-gradient(
+        ellipse at 50% 110%,
+        hsl(0deg 0 100 / 24%),
+        hsl(0deg 0 100 / 0%) 80%
+      );
     animation: glow 24s ease-in-out 1s infinite;
   }
 

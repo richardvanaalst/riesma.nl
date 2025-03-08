@@ -1,2 +1,3 @@
-# ![logo](https://raw.githubusercontent.com/richardvanaalst/riesma.nl/main/favicon.ico) riesma.nl
-https://riesma.nl
+# ![logo](icon.png) riesma.nl
+
+🔗 [riesma.nl](https://riesma.nl)

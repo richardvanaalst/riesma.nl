@@ -22,15 +22,14 @@
     place-content: center;
     height: 100dvh;
     font-family: system-ui, sans-serif;
-    color: var(--sevilla);
+    color: var(--white);
     text-align: center;
     text-shadow: 0.5px 0 0 hsl(0deg 0% 100% / 0.6);
-    background-color: var(--cloud);
+    background-color: var(--petrol);
     background-image:
       linear-gradient(135deg, var(--sevilla), transparent 60%),
       linear-gradient(45deg, var(--mint), transparent 60%),
       linear-gradient(-90deg, var(--petrol), transparent 60%);
-    animation: glow 24s ease-in-out 1s infinite;
   }
 
   a {
@@ -42,35 +41,44 @@
     margin-inline: 12.5vw;
     font-size: clamp(1.25em, 4vw, 2em);
     font-weight: 400;
-    opacity: 0.4;
     letter-spacing: min(1.25vw, 0.5em);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      animation: glow 24s ease-in-out 1s infinite;
+    }
+
+    body {
+      opacity: 0.4;
+    }
   }
 
   @keyframes glow {
     0% {
-      color: var(--sevilla);
-      text-shadow: -0.5px 0 0 hsl(0deg 0% 100% / 0.6);
-      background-color: var(--cloud);
-    }
-    25% {
-      color: var(--white);
-      text-shadow: 0.5px 0 0 hsl(0deg 0% 0% / 0.4);
-      background-color: var(--mint);
-    }
-    50% {
-      color: var(--white);
-      text-shadow: 0.5px 0 0 hsl(0deg 0% 0% / 0.4);
-      background-color: var(--sevilla);
-    }
-    75% {
       color: var(--white);
       text-shadow: 0.5px 0 0 hsl(0deg 0% 0% / 0.4);
       background-color: var(--petrol);
     }
-    100% {
+    25% {
+      color: var(--white);
+      text-shadow: 0.5px 0 0 hsl(0deg 0% 0% / 0.4);
+      background-color: var(--sevilla);
+    }
+    50% {
       color: var(--sevilla);
       text-shadow: -0.5px 0 0 hsl(0deg 0% 100% / 0.6);
       background-color: var(--cloud);
+    }
+    75% {
+      color: var(--white);
+      text-shadow: 0.5px 0 0 hsl(0deg 0% 0% / 0.4);
+      background-color: var(--mint);
+    }
+    100% {
+      color: var(--white);
+      text-shadow: 0.5px 0 0 hsl(0deg 0% 0% / 0.4);
+      background-color: var(--petrol);
     }
   }
 </style>
